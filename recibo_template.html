@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> $nome_empresa - Emiss&atilde;o de Recibos</title>
+        <style>
+            table { width: 100%; color: blue; }
+            tr:nth-of-type(odd) { /*background: #eee; */ }
+            th { color: #000;  font-weight: bold;  }
+            td, th { padding: 6px; border: 1px solid #ccc; text-align: left; }
+            td div { display:inline;border-bottom:1px solid #000; width:500px; background-color: #cecece; }
+        </style>
+    </head>
+    <body>
+
+    <div style="overflow-x:auto;">
+        <table style="border-collapse:collapse"> 
+            <tr> 
+                <th colspan="3">
+                    <table style="border:none;">
+                        <tr>
+                            <td style="text-align:center"><img src="data:image/png;base64,$logo_empresa" style="max-width:100px; height:auto;"></td>
+                            <td><h2>RECIBO N&#176; $numero_recibo </h2></td>
+                        </tr>   
+                    </table>
+                </th> 
+                <td>
+                    <table style="border:none;">
+                        <tr>
+                            <td> R$ $valor </td>
+                        </tr>
+                        <tr>
+                            <td> I.R na fonte R$ $vir </td>
+                        </tr>
+                        <tr>
+                            <td> Total R$ $vtotal </td>
+                        </tr>
+                    </table>
+                </td> 
+            </tr> 
+            <tr> 
+                <td colspan="4"> 
+                    Recebemos de 
+                    <div> $nome_cliente </div>
+                </td> 
+            </tr> 
+            <tr> 
+                <td colspan="4"> 
+                    a quantia de  
+                    <div> $descricao </div>
+                </td> 
+            </tr> 
+            <tr> 
+                <td colspan="4"> 
+                    referente 
+                    <div> $quantia_extenso </div>
+                </td> 
+            </tr> 
+            <tr> 
+                <td colspan="4">
+                    <table style="border:none">
+                        <tr>
+                            <td>
+                                <div style="display:inline;background-color:transparent !important; border:0px !important"> 
+                                    $nome_empresa
+                                </div>
+                                <div style="display:inline;background-color:transparent !important; border:0px !important">
+                                    $cnpj
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> $endereco_empresa</td>
+                        </tr>
+                        <tr>
+                            <td> $telefone_empresa </td>
+                        </tr>
+                        <tr>
+                            <td> $email_empresa </br>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <div style="background-color:transparent !important; border:0px !important">
+                                    Curitiba, $dia/$mes/$ano
+                                </div>
+                                <br>
+                                <div style="background-color:transparent !important; border:0px !important;">
+                                    <img src="data:image/png;base64,$assinatura" style="max-width:500px;height:auto;margin-left:-47px;margin-top:10px;">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td> 
+            </tr> 
+        </table>
+    </div>
+
+    </body>
+</html>

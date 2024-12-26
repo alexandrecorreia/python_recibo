@@ -6,7 +6,12 @@ __pycache__/
 # Ignorar diretórios virtuais
 venv/
 env/
+.env
 
 # Ignorar banco e indice gerador de recibo
 db_recibos.db
 id_recibo
+
+# Ignorar imagens
+img/assinatura.png
+img/logo.png
