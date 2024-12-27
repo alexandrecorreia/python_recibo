@@ -218,7 +218,7 @@ class Gerador():
         if recibo:
             self.imprimir_recibo( recibo.id_recibo )
         else:
-            print('\n--- Numero de Recibo NÃO ENCONTRADO!---')
+            print('\n--- Numero de Recibo NÃO ENCONTRADO !---')
 
     def imprimir_recibo(self, id_recibo):
 
